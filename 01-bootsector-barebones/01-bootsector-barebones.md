@@ -1,4 +1,4 @@
-# 01-bootsector-barebones.md
+# 01 Bootsector Barebones
 
     loop:
         jmp loop
