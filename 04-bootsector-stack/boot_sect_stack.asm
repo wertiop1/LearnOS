@@ -1,6 +1,6 @@
-mov ah, 0x0e
+mov ah, 0x0e ; tty mode
 
-mov bp, 0x8000
+mov bp, 0x8000 ; distant from 0x7c00
 mov sp, bp
 
 push 'A'

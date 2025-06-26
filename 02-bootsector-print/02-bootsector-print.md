@@ -33,7 +33,7 @@ TTY mode
     mov al, '!'
     int 0x10
 
-Print "Hello, World!"
+Print "Hello, World!", int 0x10 invokes screen-related ISR
 
     times 510-($-$$) db 0
     dw 0xaa55
