@@ -1,8 +1,9 @@
 ;
-mov ah, 0x0e ; tty for BIOS
+mov ah, 0x0e ; ax -> 0x0e00
+;tty for BIOS
 
 ;Hello
-mov al, 'H'
+mov al, 'H' ;
 int 0x10
 mov al, 'e'
 int 0x10
@@ -30,6 +31,8 @@ int 0x10
 
 mov al, '!'
 int 0x10
+
+jmp $
 
 times 510-($-$$) db 0
 dw 0xaa55
