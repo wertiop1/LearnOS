@@ -11,3 +11,11 @@ Simple OS following [cfenollosa/os-tutorial](https://github.com/cfenollosa/os-tu
 
     $ od -t x1 -A n {bin_file_name}
 
+## Cross Compiler Setup
+
+On M1 Sequia 15.3
+
+    $ brew install i686-elf-gcc
+    $ brew install i686-elf-gdb
+
+Brew redirects i386-elf-gcc to x86_64-elf-gcc
