@@ -34,8 +34,8 @@ Dissassmble
 
 Method 1:
 
-    $ objdump -d {object_file_name}
+    $ objdump -d {object_file_name} > {dissasmbled_file_name}
 
 Method 2:
 
-    $ ndisasm -b 32 {object_file_name} > {dissasmbled_file_name}
+    $ ndisasm -b 32 {bin_file_name} > {dissasmbled_file_name}
