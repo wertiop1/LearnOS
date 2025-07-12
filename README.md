@@ -28,7 +28,7 @@ Compile
 
 Link
 
-    $ i686-elf-ld -o {bin_file_name} -Ttext 0x0 --oformat binary {object_file_name}
+    $ i686-elf-ld -o {bin_file_name} -Ttext {origin_load_location} --oformat binary {object_file_name}
 
 Dissassmble
 
