@@ -1,0 +1,13 @@
+00000000  55                push ebp
+00000001  89E5              mov ebp,esp
+00000003  8B4508            mov eax,[ebp+0x8]
+00000006  5D                pop ebp
+00000007  C3                ret
+00000008  55                push ebp
+00000009  89E5              mov ebp,esp
+0000000B  68DEDE0000        push dword 0xdede
+00000010  E8EBFFFFFF        call 0x0
+00000015  83C404            add esp,byte +0x4
+00000018  90                nop
+00000019  C9                leave
+0000001A  C3                ret
